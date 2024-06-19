@@ -1,0 +1,24 @@
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: #040404;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    /*z-index: 10;*/
+}
+.redSocialIcon{
+    font-size: 20px;
+}
+
+.redSocialTexto{
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 30px 0px 0px;
+    font-size: 20px; 
+}
+
+.copyright {
+    font-size: 15px;
+    margin-top: 10px;
+}

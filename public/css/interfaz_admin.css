@@ -1,0 +1,42 @@
+*{
+    font-family: arial;
+    color: white;
+}
+
+body{
+background: linear-gradient(to top, #000 , #4e7eff 130%);
+}
+
+.seccion{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionText{
+    font-weight:600;
+    font-size: 2.5em;
+    height: auto;
+    margin: 30px 0px 0px 0px;
+    
+}
+
+.contenedorAdmin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcionesAdmin {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* eso es pa hacer salto de linea segun el espacio*/
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0px 100px 0px;
+}

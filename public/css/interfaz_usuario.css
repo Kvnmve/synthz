@@ -1,0 +1,289 @@
+/*CARRUSEL*/
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+/*body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}*/
+
+.container-center{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.container-carousel {
+    position: relative;
+    width: 1200px;
+    height: 450px;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+  
+}
+
+.carruseles {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section {
+    width: calc(100% / 10);
+    height: 100%;
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+
+/*interfaz ususario*/
+.contenedorInterfaz{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenidoInterfaz{
+    padding: 30px 0px 0px 0px;
+    width: 90%;
+    height: auto;
+}
+
+.BigTxt{
+    font-size: 50px;
+}
+
+.contenidoInterfaz h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.contenidoInterfaz h1{
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contenidoInterfaz p{
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 200;
+}
+
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgPublic{
+    margin: 50px 0px 20px 0px;
+    border-radius: 8px;
+    width:70%;
+    min-width: 600px;
+    max-width: 1300px;
+}
+
+/*CSS DE LISTA PRODUCTOS */
+
+body {
+    background: linear-gradient(to right, #000000,  #2f3293, #000000);
+    justify-content: center; /* Centra horizontalmente */
+    padding: 0; /* AÃƒÂ±ade espacio en la parte superior e inferior */    margin: 0;
+}
+
+h1, h2, p{
+    color: white;
+}
+
+.freeImg{
+    height: 35px;
+    margin: 5px;
+    position: absolute;
+    z-index: 50;
+    transition: 0.7s;
+}
+
+.divContProductos {
+    padding: 20px 20% 20px 20%;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente */
+    max-width: 1200px; /* Establece el ancho mÃƒÂ¡ximo segÃƒÂºn tu diseÃƒÂ±o */
+}
+
+.carta {
+    width: auto; /* Establece el ancho mÃƒÂ¡ximo de 4 cartas por fila */
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    background: #0000001f;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+    transition: 0.3s;
+}
+
+/* pa cambiar el ancho de las cartas cuando el ancho de la pantalla sea menor */
+@media (max-width: 1200px) {
+    .carta {
+        width: calc(33.33% - 20px); /* el ancho mÃƒÂ¡ximo de 3 cartas por fila */
+    }
+}
+
+@media (max-width: 800px) {
+    .carta {
+        width: calc(50% - 20px); /* el ancho mÃƒÂ¡ximo de 2 cartas por fila */
+    }
+}
+
+@media (max-width: 600px) {
+    .carta {
+        width: calc(100% - 20px); /*el ancho mÃƒÂ¡ximo de 1 carta por fila */
+    }
+}
+
+.imagen-producto {
+    width: 100%; /* la imagen ocupa el 100% del ancho de su cont (div carta) */
+    height: auto; /* la altura se ajusta auto pa mantener la proporciÃƒÂ³n original */
+    transition: 0.3s;
+}
+
+.cajaProducto {
+    width: 180px;
+    height: auto;
+    transition: 0.5s;
+    margin-bottom: -13px;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    color: white;
+    /*background: linear-gradient(to top, rgb(0 0 0) 50%, rgba(0, 0, 255, 0) 100%);*/
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    bottom: -100%;
+    transition: bottom 0.3s;
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nombre-producto {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    padding: 0px 20px 0px 20px;
+}
+
+.descripcion {
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 0px 20px 0px 20px;
+}
+
+.nombre-producto, .descripcion{
+    filter: drop-shadow(0px 0px 10px rgb(0 0 0));
+    text-align: center;
+}
+
+.contenido-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /*altura igual al 100% */
+}
+
+.carta:hover .contenido {
+    bottom: 0px;
+}
+
+.carta:hover .imagen-producto img {
+    filter: drop-shadow(0px 5px 50px rgb(255 255 255));
+    filter: blur(25px);
+}
+
+/*BOTÓN NEON */
+
+/*BOTÓN NEON*/
+
+.botonNeonEditable {
+    background-color: transparent;
+    /*z-index: 2;*/
+    color: rgb(255, 255, 255);
+    ;
+    border: 5px solid rgb(0, 102, 255);
+    ;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: auto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 15px rgb(0, 102, 255)) drop-shadow(0 0 50px rgb(0, 102, 255)) contrast(2) brightness(2);
+    transition: .5s;
+    text-transform: uppercase;
+    margin: 10px 0px 0px 0px;
+    text-decoration: none;
+}
+
+.botonNeonEditable:hover {
+    background-color: rgb(0, 102, 255);
+}

@@ -1,0 +1,147 @@
+body{
+    background: linear-gradient(to right, #000000,  #2f3293, #000000);
+}
+
+.contenedor-producto {
+    font-family: Arial, sans-serif;
+    /* margin: 0; */
+    /* padding: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 90vh;*/
+    
+    
+}
+
+.imgProdPrincipal {
+    
+    max-width: 350px;
+    width: 70%;
+    height: auto;
+    filter: drop-shadow(50px 50px 50px black);
+    margin: 10px 10px -15px 10px;
+    z-index: 10;
+    position: relative; /* AÃ±ade esto */
+}
+
+.detalle-producto h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 50px;
+    z-index: 15;
+    position: relative; /* AÃ±ade esto */
+}
+
+.descProd {
+    font-size: 26px;
+    margin: 10px 0;
+    color: white;
+    z-index: 20;
+    position: relative;
+}
+
+.detalle-producto {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 70px 50px 70px;
+    box-shadow: 0px 0px 100px -10px;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    overflow: hidden;
+    z-index: 15;
+    position: relative; /* AÃ±ade esto */
+    margin: 30px 0px 0px 0px;
+}
+
+.fondoProd {
+    
+    position: absolute;
+    top: -200px;
+    left: -120px;
+    width: 1000px;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.precioProd {
+    font-size: 25px;
+    margin: 10px 0;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 5;
+    position: relative;
+}
+
+.botonProd {
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+    color: rgb(255, 255, 255);;
+    border: 3px solid rgb(0, 102, 255);;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: auto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 15px rgb(0, 102, 255)) drop-shadow(0 0 50px rgb(0, 102, 255)) contrast(2) brightness(2);
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin: 10px 0px 0px 0px;
+    text-decoration: none;
+}
+
+.botonProd:hover {
+    background-color: rgb(0, 102, 255);
+}
+
+.volverBoton{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 0px 20px 0px;
+}
+
+.gradiente{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .8;
+    margin: -20px 0px 0px -70px ;
+    background: linear-gradient(to bottom, #ffffff00, #000000 100%);
+}
+
+.botonProd2 {
+    background-color: rgb(0, 102, 255);
+    z-index: 1;
+    position: relative;
+    color: rgb(255, 255, 255);;
+    border: 3px solid rgb(0, 102, 255);
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: auto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 15px rgb(0, 102, 255)) drop-shadow(0 0 50px rgb(0, 102, 255)) contrast(2) brightness(2);
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin: 15px 0px 15px 0px;
+    text-decoration: none;
+}
+
+.botonProd2:hover {
+    background-color: rgb(8 93 222);
+    border: 3px solid rgb(8, 92, 222);
+    filter: drop-shadow(0 0 25px rgb(0, 102, 255)) drop-shadow(0 0 40px rgb(5 68 163)) contrast(2) brightness(2);
+}

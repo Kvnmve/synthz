@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+:root {
+    --color-primario: rgb(0, 102, 255); /*variable de color azul*/
+}
+
+header {
+    background-color: #040404;
+    width: 100%;
+    position: sticky;
+    top: -1px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    height: 100px;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.logoHeader {
+    width: 70px;
+    transition: 1s ease;
+    margin: 0px 20px 0px 0px;
+}
+
+.logoHeader:hover {
+    filter: drop-shadow(3px 1px 4px rgba(255, 255, 255, 0.3));
+}
+
+.menuHeader {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    max-width: 1000px;
+}
+
+.opcionMenuHeader {
+    /* margin: 0 1rem; */
+    color: white;
+    padding: 10px 2px;
+}
+
+.cuentaMenuHeader {
+    padding: 13px 24px;
+    border-radius: 13px;
+    background-color: transparent;
+    /* margin: 0px 0px 0px 30px; */
+    border: 2px solid rgb(128, 128, 128);
+}
+
+.cuentaMenuHeader:hover {
+    background-color: var(--color-primario);
+}
+
+.opcionMenuHeader, .cuentaMenuHeader{
+    transition: 0.3s; /*aplica solo para cuentaMenuHeader*/
+    font-weight: 780;
+    text-transform: uppercase;
+    white-space: nowrap /*forzar a usar un solo renglon*/
+}
+
+.linkMenuHeader, .link2MenuHeader{ /*Etiqueta A*/
+    text-decoration: none;
+    color: white;
+    transition: 0.3s; /*Aaplica solo para linkMenuHeader */
+    font-size: 14px;
+}
+
+.linkMenuHeader:hover{
+   color: var(--color-primario);
+}
+
+.fondoAzul{
+    background: transparent;
+}
+
+/*
+
+.sticky-header {
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    position: sticky;
+    top: 0; /* Se mantiene en la parte superior de la pantalla */
+    /* Otros estilos para el encabezado 
+  }
+
+*/

@@ -1,0 +1,135 @@
+*{
+    padding: 0; 
+      margin: 0;
+    }
+    
+    .contenedor_loader{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+          flex-direction: column;
+       background: linear-gradient(to top, #000 , #2f3293);
+      }
+    
+    .cargando_texto{
+      color: #ffffff;  
+      margin: 10px
+    }
+    
+      .wave-menu {
+          border: 2px solid #ffffff;
+          border-radius: 50px;
+          width: 200px;
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+          transition: ease 0.2s;
+          position: relative;
+          background: #2f3293;
+        }
+        
+        .wave-menu li {
+          list-style: none;
+          height: 30px;
+          width: 4px;
+          border-radius: 10px;
+          background: #fff;
+          margin: 0 6px;
+          padding: 0;
+          animation-name: wave1;
+          animation-duration: 0.3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          transition: ease 0.2s;
+        }
+        
+        .wave-menu:hover > li {
+          background: #2f3293;
+        }
+        
+        .wave-menu:hover {
+          background: #ffffff;
+        }
+        
+        .wave-menu li:nth-child(2) {
+          animation-name: wave2;
+          animation-delay: 0.2s;
+        }
+        
+        .wave-menu li:nth-child(3) {
+          animation-name: wave3;
+          animation-delay: 0.23s;
+          animation-duration: 0.4s;
+        }
+        
+        .wave-menu li:nth-child(4) {
+          animation-name: wave4;
+          animation-delay: 0.1s;
+          animation-duration: 0.3s;
+        }
+        
+        .wave-menu li:nth-child(5) {
+          animation-delay: 0.5s;
+        }
+        
+        .wave-menu li:nth-child(6) {
+          animation-name: wave2;
+          animation-duration: 0.5s;
+        }
+        
+        .wave-menu li:nth-child(8) {
+          animation-name: wave4;
+          animation-delay: 0.4s;
+          animation-duration: 0.25s;
+        }
+        
+        .wave-menu li:nth-child(9) {
+          animation-name: wave3;
+          animation-delay: 0.15s;
+        }
+        
+        @keyframes wave1 {
+          from {
+            transform: scaleY(1);
+          }
+        
+          to {
+            transform: scaleY(0.5);
+          }
+        }
+        
+        @keyframes wave2 {
+          from {
+            transform: scaleY(0.3);
+          }
+        
+          to {
+            transform: scaleY(0.6);
+          }
+        }
+        
+        @keyframes wave3 {
+          from {
+            transform: scaleY(0.6);
+          }
+        
+          to {
+            transform: scaleY(0.8);
+          }
+        }
+        
+        @keyframes wave4 {
+          from {
+            transform: scaleY(0.2);
+          }
+        
+          to {
+            transform: scaleY(0.5);
+          }
+        }
+        
